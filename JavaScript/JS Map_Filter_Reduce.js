@@ -1,3 +1,4 @@
+// MAP
 // JS array method .map functionality 
 
 const myArr = [1, 2, 3, 4]
@@ -9,7 +10,7 @@ const multiply = myArr.map((num, i, arr) => { // we dont use i or arr here
 console.log(multiply); // [3, 6, 9, 12]
 
 
-
+// Filter
 // FILTER runs a condition for each element of the given array and pushes to new array when result in True and leaves the value out when the function returns false.
 
 const moreThanTwo = myArr.filter((num) => {
@@ -18,6 +19,8 @@ const moreThanTwo = myArr.filter((num) => {
 console.log(moreThanTwo); // [3, 4]
 
 
+
+// Reduce
 // REDUCE, reduces the input from the array to a single value.
 // reduce takes arguments; accumulator = sum of the previous computed value -> current value = the current index falue. -> the index if needed. -> possibly an array. 
 // most commonly and here we only use the acc and curr.
@@ -39,3 +42,11 @@ Array.prototype.myMap = function (cb) {
   
   return map;
 }
+
+
+// Creating a Polyfill for Filter
+
+
+
+
+// Creating a Polyfill for Reduce
